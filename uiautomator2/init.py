@@ -20,7 +20,7 @@ from uiautomator2.utils import natualsize
 
 appdir = os.path.join(os.path.expanduser("~"), '.uiautomator2')
 
-GITHUB_BASEURL = "https://github.com/openatx"
+GITHUB_BASEURL = "https://github.com/alisaitteke/atx-agent"
 
 
 class DownloadBar(progress.bar.PixelBar):
