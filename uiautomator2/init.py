@@ -98,8 +98,7 @@ def mirror_download(url: str, filename=None, logger: logging.Logger = logger):
         filename = os.path.basename(url)
     github_host = "https://github.com"
     if url.startswith(github_host):
-        mirror_url = "https://tool.appetizer.io" + url[len(
-            github_host):]  # mirror of github
+        mirror_url = github_host  # mirror of github
         try:
             return cache_download(mirror_url,
                                   filename,
