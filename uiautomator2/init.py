@@ -20,7 +20,8 @@ from uiautomator2.utils import natualsize
 
 appdir = os.path.join(os.path.expanduser("~"), '.uiautomator2')
 
-GITHUB_BASEURL = "https://github.com/alisaitteke/atx-agent"
+GITHUB_BASEURL = "https://github.com/openatx/atx-agent"
+GITHUB_BASEURL_DROID = "https://github.com/alisaitteke/atx-agent"
 
 
 class DownloadBar(progress.bar.PixelBar):
@@ -192,7 +193,7 @@ class Initer():
             raise Exception(
                 "arch(%s) need to be supported yet, please report an issue in github"
                 % self.abis)
-        return GITHUB_BASEURL + '/atx-agent/releases/download/%s/%s' % (
+        return GITHUB_BASEURL_DROID + '/atx-agent/releases/download/%s/%s' % (
             __atx_agent_version__, name.format(v=__atx_agent_version__))
 
     @property
