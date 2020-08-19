@@ -40,7 +40,7 @@ __apk_version__ = '2.3.1'
 __jar_version__ = 'v0.1.6'  # no useless for now.
 # v0.1.6 first release version
 
-__atx_agent_version__ = '0.9.6'
+__atx_agent_version__ = '0.9.7'
 # 0.9.5 log support rotate, prevent log too large
 # 0.9.4 test travis push to qiniu-cdn
 # 0.9.3 fix atx-agent version output too many output
